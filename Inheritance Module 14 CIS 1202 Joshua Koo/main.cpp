@@ -28,6 +28,7 @@ int main() {
 
 	cout << "\nEnter Car Information:" << std::endl;
 	cout << "Manufacturer: ";
+	cin.ignore();
 	getline(cin, manufacturer);
 	cout << "Year Built: ";
 	cin >> yearBuilt;
@@ -42,6 +43,7 @@ int main() {
 
 	cout << "\nEnter Truck Information:" << std::endl;
 	cout << "Manufacturer: ";
+	cin.ignore();
 	getline(cin, manufacturer);
 	cout << "Year Built: ";
 	cin >> yearBuilt;
