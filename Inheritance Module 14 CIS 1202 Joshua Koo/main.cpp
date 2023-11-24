@@ -16,7 +16,7 @@ int main() {
 
 	cout << "Enter Vehicle Information:" << std::endl;
 	cout << "Manufacturer: ";
-	cin >> manufacturer;
+	getline(cin, manufacturer);
 	cout << "Year Built: ";
 	cin >> yearBuilt;
 
@@ -28,7 +28,7 @@ int main() {
 
 	cout << "\nEnter Car Information:" << std::endl;
 	cout << "Manufacturer: ";
-	cin >> manufacturer;
+	getline(cin, manufacturer);
 	cout << "Year Built: ";
 	cin >> yearBuilt;
 	cout << "Number of Doors: ";
@@ -40,13 +40,13 @@ int main() {
 	// Truck
 	double towingCapacity;
 
-	std::cout << "\nEnter Truck Information:" << std::endl;
-	std::cout << "Manufacturer: ";
-	std::cin >> manufacturer;
-	std::cout << "Year Built: ";
-	std::cin >> yearBuilt;
-	std::cout << "Towing Capacity (in tons): ";
-	std::cin >> towingCapacity;
+	cout << "\nEnter Truck Information:" << std::endl;
+	cout << "Manufacturer: ";
+	getline(cin, manufacturer);
+	cout << "Year Built: ";
+	cin >> yearBuilt;
+	cout << "Towing Capacity (in tons): ";
+	cin >> towingCapacity;
 
 	Truck truck(manufacturer, yearBuilt, towingCapacity);
 	truck.displayInfo();
