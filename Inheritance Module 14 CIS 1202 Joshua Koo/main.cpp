@@ -17,4 +17,5 @@ int main() {
 	cout << "Year Built: ";
 	cin >> yearBuilt;
 
+	return 0;
 }
